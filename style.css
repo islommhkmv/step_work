@@ -1,0 +1,49 @@
+@keyframes shadow {
+    from {text-shadow: 0 0 3px black;}
+    50% {text-shadow: 0 0 30px black;}
+    to {text-shadow: 0 0 3px black;}    
+}
+
+.class:hover {
+    animation: shadow 2s ease;
+}
+
+@keyframes anime {
+    from {
+        transform: rotate(50deg);
+}
+    50%  {
+        transform: rotate(10deg);
+}
+    to {
+        transform: rotate(30deg);
+}
+}
+
+
+.kartina {
+    height: 100px; ;
+    width: 100px;
+}
+
+.kartina:hover {
+    animation: anime 10s infinite ;
+}
+
+@keyframes example {
+    from {
+        transform: translateY(800px); 
+}
+    50%  {
+        transform: translateX(800px); 
+}
+    to {
+        transform: translateY(-800px); 
+}
+}
+
+.example {
+    height: 200px;
+    width: 200px;
+    animation: example 4s infinite;
+}
